@@ -173,8 +173,6 @@
         passwordError = true;
         passwordMessage = error.message;
         if (passwordMessage === "Failed to fetch") {
-          //This API enables cross-origin requests to anywhere.
-          url = `https://cors-anywhere.herokuapp.com/${url}`;
           initialLoad();
         }
       });
